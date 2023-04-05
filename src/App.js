@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import Acceder from './componentes/Acceder';
+import Saludar from './componentes/Saludar';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className='text-center'>Hola</h1>
+
+        <Acceder tieneAcceso={false} />
+        <Saludar/>
+      
     </div>
   );
 }
